@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Pst service </title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="btn-close"></div>
+  <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+  <div class="address">
+    <div class="address-icon"><img src="img/location.svg" alt=""></div>
+    <div class="address-text">Пенза, ул. Строителей, 4</div>
+  </div>
+
+  <div class="schedule">
+    <p><strong>ПН-ПТ:</strong> 09.00 — 18.00</p>
+    <p><strong>СБ, ВС:</strong> выходные</p>
+  </div>
+
+  <a href="tel:+78002018706" class="phone color-orange">8 800 2018 706</a>
+  <div class="contacts-box">
+    <a href="tel:+78412257257">+7 8412 257 257</a>
+    <a href="mailto:info@psttool.ru">info@psttool.ru</a>
+  </div>
+</div>
+
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap align-items-center">
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+        <div class="address">
+          <div class="address-icon"><img src="img/location.svg" alt=""></div>
+          <div class="address-text">Пенза, ул. Строителей, 4</div>
+        </div>
+
+        <div class="schedule">
+          <p><strong>ПН-ПТ:</strong> 09.00 — 18.00</p>
+          <p><strong>СБ, ВС:</strong> выходные</p>
+        </div>
+
+        <a href="tel:+78002018706" class="phone color-orange">8 800 2018 706</a>
+        <div class="contacts-box">
+          <a href="tel:+78412257257">+7 8412 257 257</a>
+          <a href="mailto:info@psttool.ru">info@psttool.ru</a>
+        </div>
+        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#callModal">оставить заявку</a>
+
+        <div class="btn-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6 wow animate__animated animate__fadeInLeft">
+        <h1>Лучшее решение для вашего авто</h1>
+
+        <a href="#" class="btn btn-border wow animate__animated animate__fadeInLeft" data-toggle="modal" data-target="#callModal">получить коммерческое
+          предложение</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-7">
+        <div class="about-content wow animate__animated animate__fadeInLeft">
+          <h2>Компания <br>
+            «PST Service Russia» </h2>
+          <div class="box-text">
+            <p>Наша фирма изначально, с 2009 года, занималась ремонтом рулевого управления. Мы собрали в себя опыт и
+              знания различных компаний по ремонту рулевого управления, осуществляющих свою деятельность на территории
+              Польши, Словакии, Литвы, Италии, России.</p>
+
+            <p>Накопленный нами опыт позволил реализовать лучшие идеи, наработки, разработки в создании надежного,
+              удобного, простого в использовании и необходимого инструмента и оборудования для ремонта рулевых реек.</p>
+
+            <p>Мы предлагаем инструмент, аналогов которого не существует на территории России. Часть инструмента и
+              комплектующих изготавливается из высококачественных материалов на территории Евросоюза.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-5">
+        <div class="about-img wow animate__animated animate__fadeInRight"><img src="img/about-img.jpg" alt=""></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="callback-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="callback-wrapper wow animate__animated animate__fadeInUp">
+          <h2>Хотите получить наше коммерческое предложение?</h2>
+          <div class="callback-content">
+            <h3>Оставьте заявку и мы свяжемся с вами в ближайшее время</h3>
+            <form method="post" class="form">
+              <label>
+                <input type="text" placeholder="Имя" name="name">
+              </label>
+              <label>
+                <input type="text" placeholder="Телефон" required name="phone">
+              </label>
+              <button type="submit" class="btn btn-accent">получить КП</button>
+              <div class="consent">Отправляя заявку, вы соглашаетесь с политикой конфиденциальности</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="advantages">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-7">
+        <div class="age-box wow animate__animated animate__fadeInLeft">
+          <div class="age-box__num"><h4>12</h4></div>
+          <div class="age-box__body">
+            <h3>ЛЕТ</h3>
+            <p>на рынке рулевых реек</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-5">
+        <div class="age-box wow animate__animated animate__fadeInRight">
+          <div class="age-box__num age-box__num-v2"><h4>2</h4></div>
+          <div class="age-box__body">
+            <h3>года </h3>
+            <p>на рынке франшиз</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 wow animate__animated animate__fadeInUp">
+        <h2>за 2 года</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="advantages-box wow animate__animated animate__fadeInLeft">
+          <div class="advantages-box__img"><img src="img/adv-img1.jpg" alt=""></div>
+          <div class="advantages-box__body">
+            <p>25 открытых автосервисов</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="advantages-box wow animate__animated animate__fadeInLeft">
+          <div class="advantages-box__img"><img src="img/adv-img2.jpg" alt=""></div>
+          <div class="advantages-box__body">
+            <p>4 автосервиса на стадии запуска</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="advantages-box wow animate__animated animate__fadeInLeft">
+          <div class="advantages-box__img"><img src="img/adv-img3.jpg" alt=""></div>
+          <div class="advantages-box__body">
+            <p>20 городов</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="franchise">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="line-title wow animate__animated animate__fadeInUp">
+          <h2>PST SERVICE RUSSIA - <br>
+            НЕ ПРОДАЖА ФРАНШИЗЫ</h2>
+          <div class="subtitle">Это партнерские отношения, помощь во всех аспектах бизнеса, доступ к знаниям и
+            технологиям.
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 mb-15">
+        <div class="franchise-box wow animate__animated animate__fadeInLeft">
+          <strong>Запуск </strong>
+          <p>от 1 месяца</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-15">
+        <div class="franchise-box wow animate__animated animate__fadeInLeft">
+          <p>25</p>
+          <strong>автосервисов</strong>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-15">
+        <div class="franchise-box wow animate__animated animate__fadeInLeft">
+          <strong>Франшиза <br>
+            без взносов <br>
+            и роялти</strong>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-15">
+        <div class="franchise-box wow animate__animated animate__fadeInRight">
+          <strong>От 50
+            ремонтов </strong>
+          <p>в месяц</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-15">
+        <div class="franchise-box wow animate__animated animate__fadeInRight">
+          <strong>Окупаемость</strong>
+          <p>от 3 месяцев</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-15">
+        <div class="franchise-box wow animate__animated animate__fadeInRight">
+          <p>Прибыль </p>
+          <strong class="text-transform-none">от 500 т.р.
+            в месяц</strong>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-2 mb-15">
+        <a href="#" class="btn btn-white wow animate__animated animate__fadeInRight">получить
+          коммерческое
+          предложение</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="equipment">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 wow animate__animated animate__fadeInUp">
+        <h2>Комплектации</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-3 mb-15">
+        <div class="equipment-box wow animate__animated animate__fadeInLeft">
+          <div class="equipment-box__head">Стартовая</div>
+          <div class="equipment-box__body">
+            <div class="price">
+              <span>от</span>
+              <strong>400 т.р.</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-15">
+        <div class="equipment-box wow animate__animated animate__fadeInLeft">
+          <div class="equipment-box__head">Базовая</div>
+          <div class="equipment-box__body">
+            <div class="price">
+              <span>от</span>
+              <strong>800 т.р.</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-15">
+        <div class="equipment-box wow animate__animated animate__fadeInRight">
+          <div class="equipment-box__head">Оптимальная</div>
+          <div class="equipment-box__body">
+            <div class="price">
+              <span>от</span>
+              <strong>1,5 млн. р.</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-15">
+        <div class="equipment-box wow animate__animated animate__fadeInRight">
+          <div class="equipment-box__head">Максимальная</div>
+          <div class="equipment-box__body">
+            <div class="price">
+              <span>от</span>
+              <strong>
+                2,7 млн. р.</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stages-start">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-9 wow animate__animated animate__fadeInLeft">
+        <h2>Как происходит запуск направления?</h2>
+        <div class="subtitle">Вы не начинаете с нуля, а используете уже наработанные технологии и модели, развитые
+          каналы привлечения клиентов.
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="stages-start-box wow animate__animated animate__fadeInLeft">
+          <div class="stages-start-box__num">1</div>
+          <div class="stages-start-box__body">
+            <h3>Знакомство</h3>
+            <div class="box-text">
+              <p>Вы получаете коммерческое предложение и задаете все вопросы руководителю направления. Знакомитесь с
+                нами и планируете визит к нам. Обсуждаем нюансы ведения нового бизнеса.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="stages-start-box wow animate__animated animate__fadeInUp">
+          <div class="stages-start-box__num">2</div>
+          <div class="stages-start-box__body">
+            <h3>Обучение</h3>
+            <div class="box-text">
+              <p>Согласовываем удобный для Вас день обучения, обучаем рабочий персонал технологиям ремонта,
+                восстановления рулевых реек, диагностике автомобиля. Показываем принципы и нюансы ведения бизнеса.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="stages-start-box wow animate__animated animate__fadeInRight">
+          <div class="stages-start-box__num">3</div>
+          <div class="stages-start-box__body">
+            <h3>Подбор склада и оборудования</h3>
+            <div class="box-text">
+              <p>Согласовываем необходимый для старта и запуска инструмент, оборудование. Комплектуем индивидуальный
+                склад комплектующих для ремонта.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="stages-start-box wow animate__animated animate__fadeInLeft">
+          <div class="stages-start-box__num">4</div>
+          <div class="stages-start-box__body">
+            <h3>Согласование <br> рекламы</h3>
+            <div class="box-text">
+              <p>Подбираем и настраиваем оптимальные каналы рекламы.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="stages-start-box wow animate__animated animate__fadeInUp">
+          <div class="stages-start-box__num">5</div>
+          <div class="stages-start-box__body">
+            <h3>Поставка <br> оборудования</h3>
+            <div class="box-text">
+              <p>Вы получаете заказанное оборудование и готовый скомплектованный склад для работы.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="stages-start-box wow animate__animated animate__fadeInRight">
+          <div class="stages-start-box__num">6</div>
+          <div class="stages-start-box__body">
+            <h3>Первый доход</h3>
+            <div class="box-text">
+              <p>Первые клиенты появятся сразу после Вашей готовности и запуска рекламы. Ваша прибыль ощутима с первого
+                дня работы!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="category">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 wow animate__animated animate__fadeInUp">
+        <h2>наши категории товаров</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-3 mb-20">
+        <div class="category-box wow animate__animated animate__fadeInLeft">
+          <div class="category-box__img"><img src="img/category1.png" alt=""></div>
+          <div class="category-box__body">
+            <a href="#" class="category-box__title">Стенд для проверки и тестирования рулевых реек</a>
+            <a href="#" class="btn btn-accent">подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-20">
+        <div class="category-box wow animate__animated animate__fadeInLeft">
+          <div class="category-box__img"><img src="img/category2.png" alt=""></div>
+          <div class="category-box__body">
+            <a href="#" class="category-box__title">Комплект инструмента <br> ремонта картера</a>
+            <a href="#" class="btn btn-accent">подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-20">
+        <div class="category-box wow animate__animated animate__fadeInRight">
+          <div class="category-box__img"><img src="img/category3.png" alt=""></div>
+          <div class="category-box__body">
+            <a href="#" class="category-box__title">Цанга для извлечения сальников и др.</a>
+            <a href="#" class="btn btn-accent">подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-20">
+        <div class="category-box wow animate__animated animate__fadeInRight">
+          <div class="category-box__img"><img src="img/category4.png" alt=""></div>
+          <div class="category-box__body">
+            <a href="#" class="category-box__title">Спецключи для снятия и установки/регулировки </a>
+            <a href="#" class="btn btn-accent">подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-20">
+        <div class="category-box wow animate__animated animate__fadeInLeft">
+          <div class="category-box__img"><img src="img/category5.png" alt=""></div>
+          <div class="category-box__body">
+            <a href="#" class="category-box__title">Инструмент для снятия/установки удлинителя вала</a>
+            <a href="#" class="btn btn-accent">подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-20">
+        <div class="category-box wow animate__animated animate__fadeInLeft">
+          <div class="category-box__img"><img src="img/category6.png" alt=""></div>
+          <div class="category-box__body">
+            <a href="#" class="category-box__title">Комплект оборудования для запрессовки</a>
+            <a href="#" class="btn btn-accent">подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-20">
+        <div class="category-box wow animate__animated animate__fadeInRight">
+          <div class="category-box__img"><img src="img/category7.png" alt=""></div>
+          <div class="category-box__body">
+            <a href="#" class="category-box__title">Набор оборудования для запуска, диагностики, калибровки </a>
+            <a href="#" class="btn btn-accent">подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="education">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-7">
+        <div class="education-content wow animate__animated animate__fadeInLeft">
+          <h2>Обучение ремонту рулевых реек</h2>
+          <div class="subtitle">3-дневный курс обучению технологиям ремонта рулевых реек, устройству автосервиса</div>
+          <div class="box-text">
+            <p>Обучение руководителей и мастеров «с нуля»</p>
+          </div>
+          <a href="#" class="btn btn-white" data-toggle="modal" data-target="#callModal">запросить план обучения</a>
+        </div>
+      </div>
+      <div class="col-12 col-lg-5">
+        <div class="education-img wow animate__animated animate__fadeInRight"><img src="img/education.jpeg" alt=""></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap align-items-center">
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        <div class="address">
+          <div class="address-icon"><img src="img/location.svg" alt=""></div>
+          <div class="address-text">Пенза, ул. Строителей, 4</div>
+        </div>
+
+        <div class="footer-box">
+          <a href="tel:+78002018706" class="phone">8 800 2018 706</a>
+          <p>звонок бесплатный</p>
+        </div>
+
+        <div class="footer-box">
+          <a href="tel:+78412257257" class="phone">+7 8412 257 257</a>
+        </div>
+
+        <div class="footer-box">
+          <a href="mailto:info@psttool.ru" class="mail">info@psttool.ru</a>
+        </div>
+
+        <div class="schedule">
+          <p><strong>ПН-ПТ:</strong> 09.00 — 18.00</p>
+          <p><strong>СБ, ВС:</strong> выходные</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="callModal" tabindex="-1" aria-labelledby="callModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Оставить заявку</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form">
+          <label>
+            <input type="text" placeholder="Имя" name="name">
+          </label>
+          <label>
+            <input type="text" placeholder="Телефон" required name="phone">
+          </label>
+          <button type="submit" class="btn btn-accent">Отправить</button>
+          <div class="consent">Отправляя заявку, вы соглашаетесь с политикой конфиденциальности</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
+        integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

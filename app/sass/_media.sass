@@ -1,0 +1,329 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px)
+  .schedule
+    margin: 0 20px 0 0
+
+  .contacts-box
+    margin: 0 20px
+
+  .callback-section
+
+    h2
+      max-width: 300px
+      font-size: 24px
+
+  .callback-wrapper
+    padding: 30px
+
+  .callback-content
+    width: calc(100% - 300px)
+    padding: 0 0 0 20px
+
+  .age-box
+    font-size: 26px
+    h3
+      font-size: 50px
+      line-height: normal
+
+  .age-box__num
+    h4
+      font-size: 200px
+      line-height: normal
+
+  .advantages-box
+    font-size: 18px
+
+  .franchise-box
+    font-size: 30px
+    line-height: normal
+
+  .franchise
+    padding: 40px 0
+    .subtitle
+      max-width: 400px
+
+  .education-img
+    width: 550px
+
+  footer
+    .phone
+      font-size: 18px
+    .address
+      margin: 0 auto
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+  h1
+    font-size: 50px
+    margin: 0 0 30px
+    max-width: 700px
+
+  .home
+    &:before
+      width: 100%
+
+  .address
+    margin: 0 auto
+
+  .phone
+    font-size: 16px
+
+  header
+    font-size: 11px
+    padding: 20px 0
+
+    .btn
+      font-size: 12px
+      max-width: 150px
+
+  .schedule
+    margin: 0 15px 0 0
+
+  .contacts-box
+    margin: 0 10px
+
+  .about-img
+    margin: 20px auto
+    width: 100%
+    max-width: 400px
+    float: none
+
+  h2
+    font-size: 30px
+    margin: 0 0 25px
+
+  .callback-content
+    padding: 20px 0 0
+    width: 100%
+    border: none
+      top: 1px solid $accent
+    h3
+      margin: 0 auto 20px
+      text-align: center
+      max-width: none
+
+  .form
+    justify-content: space-around
+    label
+      max-width: none
+      width: 32%
+
+  .callback-wrapper
+    h2
+      max-width: none
+      margin: 0 auto 20px
+      text-align: center
+
+  .age-box
+    justify-content: center
+    margin: 0 0 -30px
+
+  .advantages
+    padding: 0 0 40px
+
+  .franchise
+    h2
+      max-width: none
+      text-align: center
+      margin: 0 auto 20px
+    .subtitle
+      text-align: center
+      margin: 0 auto
+      max-width: 500px
+
+  .subtitle
+    font-size: 18px
+
+  .btn-white
+    height: 50px
+
+  .equipment
+    padding: 40px 0 60px
+
+  .equipment-box__head
+    height: auto
+    padding: 20px 10px
+
+  .category
+    padding: 40px 0 60px
+    h2
+      margin: 0 0 40px
+
+  .education-img
+    width: 100%
+    height: auto
+    margin: 30px auto 0
+    float: none
+
+  .education-content
+    padding: 30px
+    text-align: center
+    .subtitle
+      max-width: none
+    h2
+      text-align: center
+    .box-text
+      max-width: none
+      font-size: 18px
+    .btn
+      margin: 30px auto 0
+
+  .education
+    margin: 0 0 50px
+
+  footer
+    padding: 30px 0
+    .schedule, .address
+      font-size: 12px
+    .schedule
+      margin: 0
+    .phone
+      font-size: 16px
+
+  .footer-box
+    padding: 0 10px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 850px)
+  .footer-box
+    width: 33.3%
+    margin: 15px 0 10px
+    min-height: 40px
+    display: flex
+    justify-content: center
+
+    flex-direction: column
+
+@media only screen and (max-width: 768px)
+  header
+    .schedule, .contacts-box
+      display: none
+    .phone
+      margin: 0 20px 0 0
+
+  .btn-burger
+    display: block
+
+  .home
+    padding: 140px 0
+
+  h1
+    font-size: 40px
+
+  h2
+    font-size: 24px
+
+  .btn-border
+    height: 55px
+    font-size: 14px
+
+  .franchise-box
+    font-size: 24px
+    padding: 10px
+    br
+      display: none
+
+  .line-title
+    margin: 0 auto 30px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px)
+  header
+    .btn, .address
+      display: none
+    .phone
+      margin: 0 auto
+
+  .btn-burger
+    margin: 0
+
+  .home
+    .btn
+      padding: 0 20px
+      font-size: 12px
+      margin: 0 auto
+
+  h1
+    font-size: 30px
+    text-align: center
+
+  .about
+    padding: 30px 0
+
+  .about-content
+    padding: 30px
+
+  .form
+    label
+      width: 100%
+      max-width: none
+      margin: 0 auto 15px
+
+  .callback-section
+    h2
+      font-size: 22px
+
+
+  .callback-wrapper
+    padding: 30px 20px
+
+  .age-box
+    margin: 0
+    font-size: 22px
+    h3
+      font-size: 40px
+
+  .age-box__num
+    h4
+      font-size: 150px
+
+  .stages-start-box
+    h3
+      br
+        display: none
+    .box-text
+      max-width: none
+
+  .stages-start .subtitle
+    margin: 0 0 30px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 480px)
+  footer
+    .address
+      width: 100%
+      margin: 10px auto
+      justify-content: center
+    .logo
+      margin: 0 auto
+
+    .schedule
+      padding: 0 10px
+      margin: 10px 0
+
+
+  .footer-box
+    margin: 10px 0
+    width: 50%
+    justify-content: center
+
+@media only screen and (max-width: 420px)
+  .age-box__body
+    padding: 0
+    width: 100%
+    text-align: center
+
+  .age-box
+    flex-wrap: wrap
+    margin: 0 0 20px
+    &__num
+      width: 100%
+      text-align: center
+      h4
+        line-height: 1
+
