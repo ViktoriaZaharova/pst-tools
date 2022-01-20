@@ -1,8 +1,7 @@
 @import "vars"
 
-/*==========  Desktop First  ==========*/
-
-/* Large Devices, Wide Screens */
+/*==========  Desktop First  ==========
+/* Large Devices, Wide Screens
 @media only screen and (max-width: 1200px)
   .schedule
     margin: 0 20px 0 0
@@ -10,11 +9,9 @@
   .contacts-box
     margin: 0 20px
 
-  .callback-section
-
-    h2
-      max-width: 300px
-      font-size: 24px
+  .callback-section h2
+    max-width: 300px
+    font-size: 24px
 
   .callback-wrapper
     padding: 30px
@@ -25,14 +22,14 @@
 
   .age-box
     font-size: 26px
+
     h3
       font-size: 50px
       line-height: normal
 
-  .age-box__num
-    h4
-      font-size: 200px
-      line-height: normal
+  .age-box__num h4
+    font-size: 200px
+    line-height: normal
 
   .advantages-box
     font-size: 18px
@@ -43,28 +40,49 @@
 
   .franchise
     padding: 40px 0
+
     .subtitle
       max-width: 400px
 
   .education-img
     width: 550px
 
-  footer
-    .phone
-      font-size: 18px
-    .address
-      margin: 0 auto
+  footer .phone
+    font-size: 18px
 
-/* Medium Devices, Desktops */
+  .footer-box
+    padding: 0 10px
+
+  .product-page__content
+    padding: 0
+    margin: 30px 0 0
+
+  .product-page
+    h1
+      text-align: left
+
+    .price
+      margin: 30px 0
+      font-size: 30px
+
+  .product-page__description
+    margin: 40px 0 0
+
+  footer .address
+    margin: 0 auto
+
+  .form-callback
+    width: calc(100% - 340px)
+
+/* Medium Devices, Desktops
 @media only screen and (max-width: 992px)
   h1
     font-size: 50px
     margin: 0 0 30px
     max-width: 700px
 
-  .home
-    &:before
-      width: 100%
+  .home:before
+    width: 100%
 
   .address
     margin: 0 auto
@@ -100,25 +118,29 @@
     padding: 20px 0 0
     width: 100%
     border: none
-      top: 1px solid $accent
+    border-top: 1px solid #19357F
+
     h3
       margin: 0 auto 20px
       text-align: center
       max-width: none
 
   .form
+    -ms-flex-pack: distribute
     justify-content: space-around
+
     label
       max-width: none
       width: 32%
 
-  .callback-wrapper
-    h2
-      max-width: none
-      margin: 0 auto 20px
-      text-align: center
+  .callback-wrapper h2
+    max-width: none
+    margin: 0 auto 20px
+    text-align: center
 
   .age-box
+    -webkit-box-pack: center
+    -ms-flex-pack: center
     justify-content: center
     margin: 0 0 -30px
 
@@ -130,6 +152,7 @@
       max-width: none
       text-align: center
       margin: 0 auto 20px
+
     .subtitle
       text-align: center
       margin: 0 auto
@@ -150,6 +173,7 @@
 
   .category
     padding: 40px 0 60px
+
     h2
       margin: 0 0 40px
 
@@ -162,13 +186,17 @@
   .education-content
     padding: 30px
     text-align: center
+
     .subtitle
       max-width: none
+
     h2
       text-align: center
+
     .box-text
       max-width: none
       font-size: 18px
+
     .btn
       margin: 30px auto 0
 
@@ -177,44 +205,65 @@
 
   footer
     padding: 30px 0
+
     .schedule, .address
       font-size: 12px
+
     .schedule
       margin: 0
+
     .phone
       font-size: 16px
 
   .footer-box
     padding: 0 10px
 
-  .product-page__content
+  .form-callback
+    width: 100%
+    max-width: none
     padding: 0
-    margin: 30px 0 0
+    margin: 10px auto 0
+    .consent
+      text-align: center
+      margin: 10px auto 0
+      max-width: none
 
-  .product-page
-    h1
-      text-align: left
-    .price
-      margin: 30px 0
-      font-size: 30px
-    &__description
-      margin: 40px 0 0
+  .callback-question-wrapper
+    padding: 20px
+    h3
+      max-width: none
+      text-align: center
+      width: 100%
+      margin: 0 auto 10px
+    .box-text
+      max-width: none
+      text-align: center
+      margin: 0 auto 20px
 
-/* Small Devices, Tablets */
+  .callback-question
+    margin: 0 0 60px
+/* Small Devices, Tablets
 @media only screen and (max-width: 850px)
   .footer-box
     width: 33.3%
     margin: 15px 0 10px
     min-height: 40px
+    display: -webkit-box
+    display: -ms-flexbox
     display: flex
+    -webkit-box-pack: center
+    -ms-flex-pack: center
     justify-content: center
-
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
     flex-direction: column
 
 @media only screen and (max-width: 768px)
   header
     .schedule, .contacts-box
       display: none
+
     .phone
       margin: 0 20px 0 0
 
@@ -237,6 +286,7 @@
   .franchise-box
     font-size: 24px
     padding: 10px
+
     br
       display: none
 
@@ -245,29 +295,29 @@
 
   .why-learn
     margin: 0 0 50px
+
     h2
       margin: 0 0 30px
 
   .page
     padding: 30px 0 60px
 
-
-/* Extra Small Devices, Phones */
+/* Extra Small Devices, Phones
 @media only screen and (max-width: 576px)
   header
     .btn, .address
       display: none
+
     .phone
       margin: 0 auto
 
   .btn-burger
     margin: 0
 
-  .home
-    .btn
-      padding: 0 20px
-      font-size: 12px
-      margin: 0 auto
+  .home .btn
+    padding: 0 20px
+    font-size: 12px
+    margin: 0 auto
 
   h1
     font-size: 30px
@@ -279,16 +329,13 @@
   .about-content
     padding: 30px
 
-  .form
-    label
-      width: 100%
-      max-width: none
-      margin: 0 auto 15px
+  .form label
+    width: 100%
+    max-width: none
+    margin: 0 auto 15px
 
-  .callback-section
-    h2
-      font-size: 22px
-
+  .callback-section h2
+    font-size: 22px
 
   .callback-wrapper
     padding: 30px 20px
@@ -296,42 +343,41 @@
   .age-box
     margin: 0
     font-size: 22px
+
     h3
       font-size: 40px
 
-  .age-box__num
-    h4
-      font-size: 150px
+  .age-box__num h4
+    font-size: 150px
 
   .stages-start-box
-    h3
-      br
-        display: none
+    h3 br
+      display: none
+
     .box-text
       max-width: none
 
   .stages-start .subtitle
     margin: 0 0 30px
 
-  .page
-    h1
-      font-size: 24px
-      margin: 0 auto 30px
-
+  .page h1
+    font-size: 24px
+    margin: 0 auto 30px
 
   .price
     margin: 15px auto
     font-size: 20px
 
-
-
-/* Custom, iPhone Retina */
+/* Custom, iPhone Retina
 @media only screen and (max-width: 480px)
   footer
     .address
       width: 100%
       margin: 10px auto
+      -webkit-box-pack: center
+      -ms-flex-pack: center
       justify-content: center
+
     .logo
       margin: 0 auto
 
@@ -339,10 +385,11 @@
       padding: 0 10px
       margin: 10px 0
 
-
   .footer-box
     margin: 10px 0
     width: 50%
+    -webkit-box-pack: center
+    -ms-flex-pack: center
     justify-content: center
 
 @media only screen and (max-width: 420px)
@@ -352,11 +399,13 @@
     text-align: center
 
   .age-box
+    -ms-flex-wrap: wrap
     flex-wrap: wrap
     margin: 0 0 20px
-    &__num
-      width: 100%
-      text-align: center
-      h4
-        line-height: 1
 
+  .age-box__num
+    width: 100%
+    text-align: center
+
+    h4
+      line-height: 1
