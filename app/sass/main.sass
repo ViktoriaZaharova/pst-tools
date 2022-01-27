@@ -1,5 +1,6 @@
-@import "vars"
-@import "fonts"
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap")
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap")
 
 *
   -webkit-box-sizing: border-box
@@ -93,7 +94,7 @@ input, textarea, select
   font-size: 14px
   color: #000
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder, input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder, input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder, input::placeholder, textarea::placeholder, select::placeholder
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder, input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder, input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder, input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder, input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder, input::placeholder, textarea::placeholder, select::placeholder
   color: #898989
 
 input
@@ -133,11 +134,6 @@ button
     box-shadow: none
 
 .btn
-  &:hover, &:focus
-    outline: none
-    -webkit-box-shadow: none
-    box-shadow: none
-
   display: -webkit-box
   display: -ms-flexbox
   display: flex
@@ -153,6 +149,11 @@ button
   width: -moz-fit-content
   width: fit-content
   text-transform: none
+
+  &:hover, &:focus
+    outline: none
+    -webkit-box-shadow: none
+    box-shadow: none
 
 .btn-border
   color: #fff
@@ -200,6 +201,9 @@ button
 
 .mb-20
   margin-bottom: 20px
+
+.mb-35
+  margin-bottom: 35px
 
 .text-transform-none
   text-transform: none
@@ -1003,7 +1007,6 @@ footer
       margin: 0 auto
 
 /*==========  modal end  ==========
-
 /*==========  new style  ==========
 
 .why-learn
@@ -1275,44 +1278,64 @@ footer
   -webkit-transform: rotate(180deg) translate(0, -50%)
   transform: rotate(180deg) translate(0, -50%)
 
-
 .callback-question
   margin: 0 0 154px
+
   h2
     margin: 0 auto 21px
     text-align: center
 
 .callback-question-wrapper
   width: 100%
-  background: $accent
+  background: #19357F
   color: #fff
   max-width: 1014px
   margin: 0 auto
+  -webkit-box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.15)
   box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.15)
   border-radius: 10px
   padding: 20px 40px 30px
+  display: -webkit-box
+  display: -ms-flexbox
   display: flex
+  -webkit-box-align: start
+  -ms-flex-align: start
   align-items: flex-start
+  -ms-flex-wrap: wrap
   flex-wrap: wrap
+
   h3
     max-width: 165px
     margin: 0
     width: 100%
+
   .box-text
     margin: 10px auto 0 13px
     max-width: 157px
 
+  .form-callback
+    input
+      &::placeholder
+        color: #fff
+
 .form-callback
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
   justify-content: space-between
   width: calc(100% - 390px)
+  -webkit-box-align: start
+  -ms-flex-align: start
   align-items: flex-start
   padding: 10px 0 0
+
   .consent
     max-width: 176px
     margin: 0 0 0 auto
+
   label
     margin: 0 0 11px 0
     max-width: 172px
+
   button
     max-width: 172px
     height: 40px
@@ -1320,13 +1343,286 @@ footer
     text-transform: none
     font-size: 12px
     border-radius: 5px
+
   input
     color: #FFFFFF
     font-size: 14px
     border: 1px solid #FFFFFF
-      radius: 5px
-    &::placeholder
-      color: #FFFFFF
-/*==========  new style end  ==========/*
+    border-radius: 5px
 
+    &::-webkit-input-placeholder, &::-moz-placeholder, &::-ms-input-placeholder, &::placeholder
+      color: #FFFFFF
+
+.plane-course
+  margin: 0 0 65px
+
+
+.plane-course-box
+  width: 100%
+  height: 100%
+  display: flex
+  //align-items: stretch
+  box-shadow: 0px 9px 24px rgba(25, 53, 127, 0.2)
+  border-radius: 10px
+  background: #19357F
+  color: #fff
+
+  &__content
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    width: calc(100% - 203px)
+    padding: 25px 20px 22px
+
+  h4
+    font-size: 18px
+    font-weight: bold
+
+  .btn
+    margin: auto 0 0
+    height: 40px
+    border-radius: 5px
+    max-width: 141px
+    text-transform: none
+    color: #000000
+    font-size: 12px
+
+    &:hover
+      color: #fff
+
+  &__img
+    width: 203px
+    height: 203px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    border-radius: 10px
+    filter: grayscale(1)
+
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+.plane-form
+  width: 100%
+  background: #fff
+  border-radius: 10px
+  box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.15)
+  padding: 11px 25px 14px
+
+  .consent
+    text-align: center
+    margin: 8px auto 0
+    color: #9F9F9F
+    font-size: 9px
+
+  h3
+    text-align: center
+    margin: 0 auto 15px
+    max-width: 345px
+    width: 100%
+
+.form-course
+  width: 100%
+
+  .form-group
+    margin: 0
+    width: 100%
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    justify-content: space-between
+
+  label
+    width: calc(50% - 13px)
+    margin: 0 0 13px
+
+  button
+    margin: 0 auto
+
+#courseModal
+  .modal-dialog
+    max-width: 747px
+
+  .modal-content
+    padding: 41px 45px 62px
+
+  .modal-title
+    margin: 0 0 35px
+    font-size: 18px
+    max-width: 447px
+    text-align: left
+
+.course-details
+  max-width: 605px
+
+  h5
+    color: #19357F
+    font-size: 16px
+    font-weight: bold
+    margin: 0 0 25px
+
+  p
+    margin: 0 0 25px
+
+  ul
+    margin: 50px 0 0
+
+.list-dots
+  list-style: disc
+  padding: 0 0 0 20px
+
+  li
+    margin: 0 0 25px
+
+    &:last-child
+      margin: 0
+
+//advantages-company
+.advantages-company
+  padding: 87px 0 65px
+  background: linear-gradient(0deg, rgba(25, 53, 127, 0.8), rgba(25, 53, 127, 0.8)), url("../img/franchise-bg.png") no-repeat center
+    size: cover
+
+.advantages-company-box
+  width: 100%
+  height: 100%
+  background: rgba(0, 0, 0, 0.5)
+  border-radius: 10px
+  backdrop-filter: blur(20px)
+  color: #fff
+  padding: 25px 18px 35px 28px
+
+  h3
+    font-size: 24px
+    margin: 0 0 14px
+    max-width: 255px
+
+  .subtext
+    font-size: 18px
+    line-height: 25px
+    margin: 0 0 16px
+
+  .box-text
+    line-height: 19px
+    font-size: 14px
+
+//benefit
+.benefit
+  margin: 82px 0 94px
+
+.benefit-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  box-shadow: 0px 9px 24px rgba(25, 53, 127, 0.2)
+  border-radius: 10px
+  background: #19357F
+  padding: 34px 34px 34px 48px
+
+  h2
+    color: #fff
+    margin: 0 0 24px
+
+  ul
+    font-size: 18px
+    font-weight: bold
+
+    li
+      margin: 0 0 15px
+
+  .btn
+    margin: 38px 0 0
+    height: 40px
+    text-transform: none
+    max-width: 219px
+    color: #000000
+    font-size: 12px
+    border-radius: 5px
+
+    &:hover
+      color: #fff
+
+  &__content
+    color: #fff
+    width: calc(100% - 445px)
+    padding: 0 60px 0 0
+
+  &__scheme
+    width: 445px
+    background: #fff
+    padding: 24px
+    text-align: center
+    border-radius: 10px
+
+    h5
+      text-align: center
+      max-width: 268px
+      font-weight: bold
+      font-size: 18px
+      margin: 0 auto 23px
+
+    .circle
+      margin: 0 auto
+      display: flex
+      align-items: center
+      justify-content: center
+      max-width: 318px
+      width: 100%
+
+.information-company
+  margin: 0 0 84px
+
+.information-company-box
+  width: 100%
+  height: 100%
+  background: #fff
+  border-radius: 10px
+  box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.15)
+  text-align: center
+  &__img
+    width: 100%
+    height: 267px
+    overflow: hidden
+    border-radius: 10px 10px 0 0
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    width: 100%
+    padding: 29px 27px 23px
+  h3
+    margin: 0 auto 18px
+    text-transform: none
+  .box-text
+    line-height: 19px
+    font-size: 14px
+
+.callback-section-two
+  margin: 0 0 70px
+  h2
+    font-size: 34px
+    span
+      font-size: 39px
+      text-transform: none
+      display: block
+      strong
+        font-size: 78px
+  .form
+    label
+      margin: 0 0 17px
+    .label-mail
+      max-width: 362px
+      width: 100%
+    .consent
+      margin: 0
+
+/*==========  new style end  ==========/*
 @import "media"

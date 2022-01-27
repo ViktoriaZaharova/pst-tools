@@ -1,6 +1,6 @@
 @import "vars"
 
-/*==========  Desktop First  ==========
+/*==========  Desktop First  ==========/*
 /* Large Devices, Wide Screens
 @media only screen and (max-width: 1200px)
   .schedule
@@ -73,6 +73,9 @@
 
   .form-callback
     width: calc(100% - 340px)
+
+  .plane-course-box h4
+    font-size: 16px
 
 /* Medium Devices, Desktops
 @media only screen and (max-width: 992px)
@@ -223,6 +226,7 @@
     max-width: none
     padding: 0
     margin: 10px auto 0
+
     .consent
       text-align: center
       margin: 10px auto 0
@@ -230,11 +234,13 @@
 
   .callback-question-wrapper
     padding: 20px
+
     h3
       max-width: none
       text-align: center
       width: 100%
       margin: 0 auto 10px
+
     .box-text
       max-width: none
       text-align: center
@@ -242,6 +248,36 @@
 
   .callback-question
     margin: 0 0 60px
+
+  #courseModal .modal-title
+    margin: 0 0 20px
+
+  #courseModal .modal-content
+    padding: 30px 20px
+
+  .course-details
+    h5, p
+      margin: 0 0 15px
+    ul
+      margin: 20px 0 0
+
+  .benefit-wrapper__scheme
+    max-width: 300px
+
+  .benefit-wrapper__content
+    width: calc(100% - 300px)
+    padding: 0 30px 0 0
+
+  .callback-section-two
+    .form
+      .label-mail
+        max-width: 65%
+      button
+        max-width: 31.5%
+
+  .callback-section-two
+    margin: 0 0 40px
+
 /* Small Devices, Tablets
 @media only screen and (max-width: 850px)
   .footer-box
@@ -301,6 +337,31 @@
 
   .page
     padding: 30px 0 60px
+
+  .advantages-company
+    padding: 40px 0
+
+  .advantages-company-box h3
+    max-width: none
+    font-size: 20px
+
+  .benefit
+    margin: 40px 0
+
+  .benefit-wrapper__content
+    width: 100%
+    padding: 0
+    .btn
+      margin: 20px auto 0
+    ul
+      font-size: 16px
+
+
+  .benefit-wrapper__scheme
+    margin: 30px auto 0
+
+  .benefit-wrapper
+    padding: 30px
 
 /* Extra Small Devices, Phones
 @media only screen and (max-width: 576px)
@@ -368,6 +429,27 @@
     margin: 15px auto
     font-size: 20px
 
+  .plane-course-box__img
+    height: 100%
+
+  .plane-course-box .btn
+    margin: 20px 0 0
+
+  .callback-section-two h2 span
+    font-size: 30px
+    strong
+      font-size: 50px
+
+  .callback-section-two .form .label-mail
+    max-width: none
+
+  .callback-section-two .form button
+    margin: 0 auto 15px
+    max-width: 100%
+
+  .callback-section-two h2 span strong
+    font-size: 40px
+
 /* Custom, iPhone Retina
 @media only screen and (max-width: 480px)
   footer
@@ -392,6 +474,9 @@
     -ms-flex-pack: center
     justify-content: center
 
+  .plane-course
+    margin: 0 0 40px
+
 @media only screen and (max-width: 420px)
   .age-box__body
     padding: 0
@@ -409,3 +494,16 @@
 
     h4
       line-height: 1
+
+  .plane-course-box
+    flex-direction: column
+    align-items: flex-start
+    &__img
+      height: 203px
+      width: 100%
+      order: -1
+    &__content
+      width: 100%
+
+  .form-course label
+    width: 100%

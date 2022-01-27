@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -87,10 +88,10 @@ input, textarea, select {
   font-size: 14px;
   color: #000; }
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder, input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder, input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder, input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder, input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder, input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder, input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
   color: #898989; }
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder, input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder, input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder, input::placeholder, textarea::placeholder, select::placeholder {
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder, input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder, input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder, input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder, input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder, input::placeholder, textarea::placeholder, select::placeholder {
   color: #898989; }
 
 input:hover, input:focus {
@@ -188,6 +189,9 @@ button:hover, button:focus {
 
 .mb-20 {
   margin-bottom: 20px; }
+
+.mb-35 {
+  margin-bottom: 35px; }
 
 .text-transform-none {
   text-transform: none; }
@@ -1196,17 +1200,17 @@ footer {
   max-width: 1014px;
   margin: 0 auto;
   -webkit-box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   padding: 20px 40px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  flex-wrap: wrap; }
   .callback-question-wrapper h3 {
     max-width: 165px;
     margin: 0;
@@ -1214,15 +1218,23 @@ footer {
   .callback-question-wrapper .box-text {
     margin: 10px auto 0 13px;
     max-width: 157px; }
+  .callback-question-wrapper .form-callback input::-webkit-input-placeholder {
+    color: #fff; }
+  .callback-question-wrapper .form-callback input::-moz-placeholder {
+    color: #fff; }
+  .callback-question-wrapper .form-callback input::-ms-input-placeholder {
+    color: #fff; }
+  .callback-question-wrapper .form-callback input::placeholder {
+    color: #fff; }
 
 .form-callback {
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: calc(100% - 390px);
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   padding: 10px 0 0; }
   .form-callback .consent {
     max-width: 176px;
@@ -1241,18 +1253,299 @@ footer {
     color: #FFFFFF;
     font-size: 14px;
     border: 1px solid #FFFFFF;
-      border-radius: 5px; }
-    .form-callback input::-webkit-input-placeholder {
+    border-radius: 5px; }
+    .form-callback input::-webkit-input-placeholder, .form-callback input::-moz-placeholder, .form-callback input::-ms-input-placeholder, .form-callback input::-webkit-input-placeholder {
       color: #FFFFFF; }
-    .form-callback input::-moz-placeholder {
-      color: #FFFFFF; }
-    .form-callback input::-ms-input-placeholder {
-      color: #FFFFFF; }
-    .form-callback input::placeholder {
+    .form-callback input::-webkit-input-placeholder, .form-callback input::-moz-placeholder, .form-callback input::-ms-input-placeholder, .form-callback input::placeholder {
       color: #FFFFFF; }
 
+.plane-course {
+  margin: 0 0 65px; }
+
+.plane-course-box {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0px 9px 24px rgba(25, 53, 127, 0.2);
+          box-shadow: 0px 9px 24px rgba(25, 53, 127, 0.2);
+  border-radius: 10px;
+  background: #19357F;
+  color: #fff; }
+  .plane-course-box__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: calc(100% - 203px);
+    padding: 25px 20px 22px; }
+  .plane-course-box h4 {
+    font-size: 18px;
+    font-weight: bold; }
+  .plane-course-box .btn {
+    margin: auto 0 0;
+    height: 40px;
+    border-radius: 5px;
+    max-width: 141px;
+    text-transform: none;
+    color: #000000;
+    font-size: 12px; }
+    .plane-course-box .btn:hover {
+      color: #fff; }
+  .plane-course-box__img {
+    width: 203px;
+    height: 203px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1); }
+    .plane-course-box__img img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+
+.plane-form {
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.15);
+  padding: 11px 25px 14px; }
+  .plane-form .consent {
+    text-align: center;
+    margin: 8px auto 0;
+    color: #9F9F9F;
+    font-size: 9px; }
+  .plane-form h3 {
+    text-align: center;
+    margin: 0 auto 15px;
+    max-width: 345px;
+    width: 100%; }
+
+.form-course {
+  width: 100%; }
+  .form-course .form-group {
+    margin: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .form-course label {
+    width: calc(50% - 13px);
+    margin: 0 0 13px; }
+  .form-course button {
+    margin: 0 auto; }
+
+#courseModal .modal-dialog {
+  max-width: 747px; }
+
+#courseModal .modal-content {
+  padding: 41px 45px 62px; }
+
+#courseModal .modal-title {
+  margin: 0 0 35px;
+  font-size: 18px;
+  max-width: 447px;
+  text-align: left; }
+
+.course-details {
+  max-width: 605px; }
+  .course-details h5 {
+    color: #19357F;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 25px; }
+  .course-details p {
+    margin: 0 0 25px; }
+  .course-details ul {
+    margin: 50px 0 0; }
+
+.list-dots {
+  list-style: disc;
+  padding: 0 0 0 20px; }
+  .list-dots li {
+    margin: 0 0 25px; }
+    .list-dots li:last-child {
+      margin: 0; }
+
+.advantages-company {
+  padding: 87px 0 65px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(25, 53, 127, 0.8)), to(rgba(25, 53, 127, 0.8))), url("../img/franchise-bg.png") no-repeat center;
+  background: linear-gradient(0deg, rgba(25, 53, 127, 0.8), rgba(25, 53, 127, 0.8)), url("../img/franchise-bg.png") no-repeat center;
+    background-size: cover; }
+
+.advantages-company-box {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  color: #fff;
+  padding: 25px 18px 35px 28px; }
+  .advantages-company-box h3 {
+    font-size: 24px;
+    margin: 0 0 14px;
+    max-width: 255px; }
+  .advantages-company-box .subtext {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0 0 16px; }
+  .advantages-company-box .box-text {
+    line-height: 19px;
+    font-size: 14px; }
+
+.benefit {
+  margin: 82px 0 94px; }
+
+.benefit-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-shadow: 0px 9px 24px rgba(25, 53, 127, 0.2);
+          box-shadow: 0px 9px 24px rgba(25, 53, 127, 0.2);
+  border-radius: 10px;
+  background: #19357F;
+  padding: 34px 34px 34px 48px; }
+  .benefit-wrapper h2 {
+    color: #fff;
+    margin: 0 0 24px; }
+  .benefit-wrapper ul {
+    font-size: 18px;
+    font-weight: bold; }
+    .benefit-wrapper ul li {
+      margin: 0 0 15px; }
+  .benefit-wrapper .btn {
+    margin: 38px 0 0;
+    height: 40px;
+    text-transform: none;
+    max-width: 219px;
+    color: #000000;
+    font-size: 12px;
+    border-radius: 5px; }
+    .benefit-wrapper .btn:hover {
+      color: #fff; }
+  .benefit-wrapper__content {
+    color: #fff;
+    width: calc(100% - 445px);
+    padding: 0 60px 0 0; }
+  .benefit-wrapper__scheme {
+    width: 445px;
+    background: #fff;
+    padding: 24px;
+    text-align: center;
+    border-radius: 10px; }
+    .benefit-wrapper__scheme h5 {
+      text-align: center;
+      max-width: 268px;
+      font-weight: bold;
+      font-size: 18px;
+      margin: 0 auto 23px; }
+    .benefit-wrapper__scheme .circle {
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      max-width: 318px;
+      width: 100%; }
+
+.information-company {
+  margin: 0 0 84px; }
+
+.information-company-box {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.15);
+  text-align: center; }
+  .information-company-box__img {
+    width: 100%;
+    height: 267px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .information-company-box__img img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .information-company-box__body {
+    width: 100%;
+    padding: 29px 27px 23px; }
+  .information-company-box h3 {
+    margin: 0 auto 18px;
+    text-transform: none; }
+  .information-company-box .box-text {
+    line-height: 19px;
+    font-size: 14px; }
+
+.callback-section-two {
+  margin: 0 0 70px; }
+  .callback-section-two h2 {
+    font-size: 34px; }
+    .callback-section-two h2 span {
+      font-size: 39px;
+      text-transform: none;
+      display: block; }
+      .callback-section-two h2 span strong {
+        font-size: 78px; }
+  .callback-section-two .form label {
+    margin: 0 0 17px; }
+  .callback-section-two .form .label-mail {
+    max-width: 362px;
+    width: 100%; }
+  .callback-section-two .form .consent {
+    margin: 0; }
+
 /*==========  new style end  ==========/* */
-/*==========  Desktop First  ========== */
+/*==========  Desktop First  ==========/* */
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
   .schedule {
@@ -1303,7 +1596,9 @@ footer {
   footer .address {
     margin: 0 auto; }
   .form-callback {
-    width: calc(100% - 340px); } }
+    width: calc(100% - 340px); }
+  .plane-course-box h4 {
+    font-size: 16px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -1432,7 +1727,26 @@ footer {
       text-align: center;
       margin: 0 auto 20px; }
   .callback-question {
-    margin: 0 0 60px; } }
+    margin: 0 0 60px; }
+  #courseModal .modal-title {
+    margin: 0 0 20px; }
+  #courseModal .modal-content {
+    padding: 30px 20px; }
+  .course-details h5, .course-details p {
+    margin: 0 0 15px; }
+  .course-details ul {
+    margin: 20px 0 0; }
+  .benefit-wrapper__scheme {
+    max-width: 300px; }
+  .benefit-wrapper__content {
+    width: calc(100% - 300px);
+    padding: 0 30px 0 0; }
+  .callback-section-two .form .label-mail {
+    max-width: 65%; }
+  .callback-section-two .form button {
+    max-width: 31.5%; }
+  .callback-section-two {
+    margin: 0 0 40px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 850px) {
@@ -1479,7 +1793,25 @@ footer {
     .why-learn h2 {
       margin: 0 0 30px; }
   .page {
-    padding: 30px 0 60px; } }
+    padding: 30px 0 60px; }
+  .advantages-company {
+    padding: 40px 0; }
+  .advantages-company-box h3 {
+    max-width: none;
+    font-size: 20px; }
+  .benefit {
+    margin: 40px 0; }
+  .benefit-wrapper__content {
+    width: 100%;
+    padding: 0; }
+    .benefit-wrapper__content .btn {
+      margin: 20px auto 0; }
+    .benefit-wrapper__content ul {
+      font-size: 16px; }
+  .benefit-wrapper__scheme {
+    margin: 30px auto 0; }
+  .benefit-wrapper {
+    padding: 30px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -1526,7 +1858,22 @@ footer {
     margin: 0 auto 30px; }
   .price {
     margin: 15px auto;
-    font-size: 20px; } }
+    font-size: 20px; }
+  .plane-course-box__img {
+    height: 100%; }
+  .plane-course-box .btn {
+    margin: 20px 0 0; }
+  .callback-section-two h2 span {
+    font-size: 30px; }
+    .callback-section-two h2 span strong {
+      font-size: 50px; }
+  .callback-section-two .form .label-mail {
+    max-width: none; }
+  .callback-section-two .form button {
+    margin: 0 auto 15px;
+    max-width: 100%; }
+  .callback-section-two h2 span strong {
+    font-size: 40px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 480px) {
@@ -1546,7 +1893,9 @@ footer {
     width: 50%;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; } }
+    justify-content: center; }
+  .plane-course {
+    margin: 0 0 40px; } }
 
 @media only screen and (max-width: 420px) {
   .age-box__body {
@@ -1561,4 +1910,22 @@ footer {
     width: 100%;
     text-align: center; }
     .age-box__num h4 {
-      line-height: 1; } }
+      line-height: 1; }
+  .plane-course-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .plane-course-box__img {
+      height: 203px;
+      width: 100%;
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1; }
+    .plane-course-box__content {
+      width: 100%; }
+  .form-course label {
+    width: 100%; } }
