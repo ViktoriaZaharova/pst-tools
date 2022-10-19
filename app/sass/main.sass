@@ -1,7 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap")
-
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap")
-
+@import "fonts"
+@import "vars"
 *
   -webkit-box-sizing: border-box
   box-sizing: border-box
@@ -134,19 +132,11 @@ button
     box-shadow: none
 
 .btn
-  display: -webkit-box
-  display: -ms-flexbox
   display: flex
-  -webkit-box-align: center
-  -ms-flex-align: center
   align-items: center
-  -webkit-box-pack: center
-  -ms-flex-pack: center
   justify-content: center
   font-size: 14px
   font-weight: bold
-  width: -webkit-fit-content
-  width: -moz-fit-content
   width: fit-content
   text-transform: none
 
@@ -157,8 +147,6 @@ button
 
 .btn-border
   color: #fff
-
-  /*background: transparent;
   height: 62px
   padding: 0 23px
   border: 1px solid #FFFFFF
@@ -260,7 +248,7 @@ strong
 .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto
   padding: 0 10px
 
-/*==========  header  ==========
+/*==========  header  ==========*/
 
 header
   position: absolute
@@ -404,8 +392,8 @@ header
     -webkit-transform: rotate(135deg)
     transform: rotate(135deg)
 
-/*==========  header end  ==========
-/*==========  home  ==========
+/*==========  header end  ==========*/
+/*==========  home  ==========*/
 
 .home
   padding: 178px 0 243px
@@ -421,12 +409,11 @@ header
     top: 0
     width: 1778px
     height: 100%
-    background: -webkit-gradient(linear, left top, right top, color-stop(12.32%, #000000), color-stop(45.39%, rgba(0, 0, 0, 0))), url("../img/home-bg.jpeg") no-repeat center
     background: linear-gradient(90deg, #000000 12.32%, rgba(0, 0, 0, 0) 45.39%), url("../img/home-bg.jpeg") no-repeat center
     background-size: cover
 
-/*==========  home end  ==========
-/*==========  about  ==========
+/*==========  home end  ==========*/
+/*==========  about  ==========*/
 
 .about
   padding: 42px 0 45px
@@ -468,8 +455,8 @@ header
   color: #fff
   padding: 46px 42px 44px
 
-/*==========  about end  ==========
-/*==========  callback  ==========
+/*==========  about end  ==========*/
+/*==========  callback  ==========*/
 
 .callback-section
   margin: 0 0 12px
@@ -527,8 +514,8 @@ header
   margin: 20px 0 0
   font-size: 9px
 
-/*==========  callback end  ==========
-/*==========  advantages  ==========
+/*==========  callback end  ==========*/
+/*==========  advantages  ==========*/
 
 .advantages
   padding: 0 0 77px
@@ -627,7 +614,6 @@ header
 .franchise
   padding: 61px 0 68px
   color: #fff
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(25, 53, 127, 0.8)), to(rgba(25, 53, 127, 0.8))), url("../img/franchise-bg.png") no-repeat center
   background: linear-gradient(0deg, rgba(25, 53, 127, 0.8), rgba(25, 53, 127, 0.8)), url("../img/franchise-bg.png") no-repeat center
   background-size: cover
 
@@ -904,8 +890,22 @@ header
     -o-object-fit: cover
     object-fit: cover
 
-/*==========  education end  ==========
-/*==========  footer  ==========
+/*==========  education end  ==========*/
+/*==========  footer  ==========*/
+.list-social
+  display: flex
+  align-items: center
+
+  li
+    margin: 0 14px 0 0
+
+    &:last-child
+      margin: 0
+
+    a
+      display: flex
+      align-items: center
+      justify-content: center
 
 footer
   font-size: 12px
@@ -1442,7 +1442,7 @@ footer
   button
     margin: 0 auto
 
-#courseModal
+.courseModal
   .modal-dialog
     max-width: 747px
 
@@ -1625,4 +1625,670 @@ footer
       margin: 0
 
 /*==========  new style end  ==========/*
+
+
+
+/*==========  new page ==========/*
+.btn-border-accent
+  border: 1px solid #F58220
+
+  &:hover
+    background: #F58220
+    color: #fff
+
+.btn-my
+  font-size: 12px
+  font-weight: bold
+  padding: 11px 34px
+  border-radius: 5px
+
+.btn-md
+  width: 100%
+  padding: 30.5px 0
+  font-size: 20px
+
+.btn-orange
+  color: #fff
+  background: #FF8B25
+  &:hover
+    background: $accent
+    color: #fff
+
+.btn-accent-gradient
+  color: #fff
+  background: linear-gradient(12.57deg, #076AB4 0%, #19357F 101.5%)
+  &:hover
+    background: linear-gradient(to top, #076AB4 0%, #19357F 101.5%)
+    color: #fff
+
+.h2-subtitle
+  text-transform: uppercase
+  font-size: 36px
+  font-weight: bold
+  line-height: 49px
+
+.ul-dots
+  list-style: disc
+  padding: 0 0 0 20px
+  line-height: normal
+  li
+    margin: 0
+
+
+.wrapper-pst-flex
+  .container
+    max-width: 1380px
+    padding: 0 15px
+  .row
+    margin: 0 -15px
+  .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto
+    padding: 0 15px
+  h2
+    font-size: 64px
+    span
+      display: block
+
+.header-flex
+  padding: 30px 0
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 2
+  background: transparent
+  .btn
+    white-space: nowrap
+  .schedule
+    display: flex
+    align-items: center
+    p
+      &:first-child
+        &:after
+          content: '|'
+          margin: 0 5px
+  .contacts-box
+    display: flex
+    align-items: center
+    margin: 0 58px 0 0
+    font-weight: bold
+    a
+      margin: 0 11px 0 0
+      &:last-child
+        margin: 0
+  .address
+    margin: 0 26px 0 75px
+  .phone
+    margin: 0 33px 0 auto
+
+.home-pst-flex
+  background: radial-gradient(71.17% 157.86% at 76.02% 83.74%, #076AB4 0%, #19357F 100%)
+  color: #fff
+  padding: 176px 0 86px
+  position: relative
+  &:before
+    display: none
+  .subtitle
+    text-transform: none
+    font-size: 36px
+    font-weight: normal
+  h1
+    color: $orange
+    margin: 0 0 20px
+  .btn
+    margin: 46px 0 0
+  .box-text
+    font-size: 24px
+    line-height: normal
+  &__image
+    @include d-flex
+    min-width: 732px
+    margin: 0 -46px -369px 0
+    img
+      width: 100%
+
+.capabilities
+  padding: 42px 0 108px
+  h2
+    margin: 7px 0 9px
+
+.slogan-service
+  margin: 0 0 130px
+  text-transform: uppercase
+  h4
+    margin: 0 0 10px
+    font-size: 36px
+    font-weight: bold
+  .box-text
+    color: #19357F
+    font-size: 24px
+    line-height: 33px
+    max-width: 485px
+
+.capabilities-image
+  @include d-flex
+  max-width: 610px
+  img
+    width: 100%
+
+.capabilities-content
+  padding: 40px 0 0
+  .h2-subtitle
+    color: #19357F
+    max-width: 400px
+  .box-text
+    font-size: 16px
+    line-height: 22px
+    p
+      margin: 0 0 12px
+    strong
+      font-size: 20px
+      font-weight: 600
+      line-height: 27px
+      margin: 0 0 13px
+
+.base-unit
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 42px 0 0
+  background: radial-gradient(70.07% 278.12% at 24.74% 49.76%, #076AB4 0%, #19357F 100%)
+  border-radius: 10px
+  color: #fff
+  padding: 53px 48px 54px 66px
+  text-transform: uppercase
+  font-size: 36px
+  font-weight: bold
+  &__image
+    margin: -242px 0 0
+    @include d-flex
+    max-width: 419px
+    width: 100%
+  &__text
+    width: calc(100% - 425px)
+    padding: 0 0 0 90px
+
+.diagnostics
+  background: radial-gradient(52.19% 115.61% at 69.9% 49.93%, #076AB4 0%, #19357F 100%)
+  color: #fff
+  padding: 36px 0 57px
+  &-image
+    @include d-flex
+    min-width: 844px
+    margin: 0 -104px 0 0
+    img
+      width: 100%
+  h2
+    color: #fff
+    margin: 0 0 21px
+    span
+      margin: -10px 0 0
+  .h2-subtitle
+    margin: 0 0 30px
+    max-width: 550px
+  &-content
+    max-width: 593px
+
+.about-product
+  padding: 75px 0
+  &__content
+    .h2-subtitle
+      max-width: 510px
+    h2
+      margin: 0 0 9px
+  &__image
+    @include d-flex
+    margin: -255px -20px -200px 0
+  &__row
+    margin: 48px 0 30px
+    position: relative
+    z-index: 1
+    color: #fff
+    padding: 27px 23px 35px
+    font-size: 20px
+    line-height: 27px
+    font-weight: 600
+    ul
+      max-width: 660px
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      background: radial-gradient(70.07% 278.12% at 24.74% 49.76%, #076AB4 0%, #19357F 100%)
+      width: 1818px
+      z-index: -1
+      height: 100%
+      border-radius: 5px
+
+
+.about-product-item
+  width: 100%
+  height: 100%
+  border: 1px solid #EC6E00
+    radius: 10px
+  padding: 20px 36px 39px
+  h4
+    text-transform: uppercase
+    color: $accent
+    margin: 0 0 20px
+    font-size: 20px
+    font-weight: bold
+    max-width: 250px
+
+.portability
+  h2
+    margin: 0 0 9px
+
+
+.portability-box
+  text-align: center
+  color: #fff
+  width: 100%
+  min-height: 200px
+  display: flex
+  flex-direction: column
+  align-items: center
+  background: linear-gradient(12.57deg, #076AB4 0%, #19357F 101.5%)
+  border-radius: 10px
+  font-weight: 600
+  padding: 37px 10px 16px
+  &__icon
+    margin: 0 auto 30px
+
+.portability-row
+  width: 100%
+  display: flex
+  align-items: center
+  position: relative
+  margin: 112px 0 0
+  &__content
+    border: 1px solid #EC6E00
+      radius: 10px
+    max-width: 1074px
+    margin: 0 0 0 auto
+    padding: 17px 65px 24px 349px
+  &__image
+    position: absolute
+    left: 0
+    bottom: -24px
+    max-width: 575px
+    @include d-flex
+  .h2-subtitle
+    color: $orange
+    margin: 0 0 9px
+  .box-text
+    font-size: 16px
+    line-height: 22px
+    ul
+      max-width: 520px
+    p
+      margin: 0 0 23px
+    strong
+      font-size: 20px
+      line-height: 27px
+      font-weight: 600
+
+.compete
+  margin: 137px 0 20px
+
+.compete-row
+  padding: 32px 0 16px
+  background: radial-gradient(87.71% 472.39% at 0% 26.6%, #076AB4 0%, #19357F 100%)
+  color: #fff
+  margin: 0 0 65px
+  h2
+    color: #fff
+    margin: 0 0 11px
+  h4
+    font-size: 36px
+    margin: 0
+  &__image
+    min-width: 438px
+    @include d-flex
+
+.compete-box
+  width: 100%
+  margin: 0 0 57px
+  border: 1px solid #EC6E00
+    radius: 10px
+  padding: 44px 29px 38px 48px
+  color: #000
+  &__name
+    color: #fff
+    text-transform: uppercase
+    margin: 0 53px 0 0
+    background: linear-gradient(12.57deg, #FF8B25 0%, #EC6E00 101.5%)
+    border-radius: 10px
+    padding: 9px 35px
+    width: fit-content
+    font-size: 36px
+    font-weight: bold
+  &__head
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin: 0 0 30px
+  &__content
+    font-size: 20px
+    font-weight: 600
+    margin: 0 0 30px
+  &__image
+    @include d-flex
+    margin: 0 0 30px
+
+.compete-box-advantages
+  width: 100%
+  height: 100%
+  .box-text
+    font-size: 16px
+    line-height: 22px
+  h4
+    text-transform: uppercase
+    color: $orange
+    margin: 0 0 9px
+    font-size: 20px
+    font-weight: 600
+
+.compete-box-plus
+  border-right: 1px solid #EC6E00
+
+.training-course-row
+  width: 100%
+  padding: 55px 0 44px
+  color: #fff
+  background: radial-gradient(52.19% 115.61% at 69.9% 49.93%, #076AB4 0%, #19357F 100%)
+  h2
+    color: #fff
+    margin: 0 0 5px
+    line-height: 67px
+  .h2-subtitle
+    margin: 0 0 24px
+    max-width: 470px
+  .box-text
+    line-height: 44px
+    font-size: 32px
+  &__image
+    @include d-flex
+    border-radius: 10px
+    height: 655px
+    margin: 0 0 -234px 0
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      border-radius: 10px
+
+.training-course
+  .description-course
+    margin: 32px 0 0
+    font-size: 20px
+    font-weight: 600
+    p
+      margin: 0 0 30px
+      &:last-child
+        margin: 0
+
+.instructor-wrapper
+  position: relative
+  margin: 107px 0 0
+  display: flex
+  align-items: center
+  &__content
+    max-width: 1173px
+    width: 100%
+    padding: 28px 65px 54px 207px
+    border: 1px solid #EC6E00
+      radius: 10px
+    margin: 0 0 0 auto
+  &__image
+    @include d-flex
+    max-width: 315px
+    width: 100%
+    height: 421px
+    border-radius: 10px
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translate(0,-50%)
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      border-radius: 10px
+  &__name
+    margin: 8px 0 35px
+    font-size: 36px
+    font-weight: bold
+  .box-text
+    line-height: 22px
+    font-size: 16px
+  h4
+    font-size: 32px
+    color: $accent
+
+.offer-company
+  margin: 136px 0 87px
+  &__image
+    @include d-flex
+    border-radius: 10px
+    img
+      border-radius: 10px
+  h2
+    margin: 0 0 9px
+  .h2-subtitle
+    margin: 0 0 50px
+
+
+.offer-company-box
+  width: 100%
+  height: 100%
+  color: #fff
+  background: linear-gradient(12.57deg, #076AB4 0%, #19357F 101.5%)
+  border-radius: 10px
+  padding: 33px 30px
+  font-size: 20px
+  span
+    margin: 9px 0 0
+    display: block
+    font-size: 36px
+    font-weight: bold
+
+.recommendation-offer
+  width: 100%
+  display: flex
+  align-items: start
+  margin: 80px 0 0
+  h4
+    font-size: 20px
+    font-weight: 600
+    text-transform: uppercase
+    max-width: 528px
+    border-right: 1px solid $orange
+    margin: 0 40px 0 0
+  .box-text
+    max-width: 500px
+    font-size: 16px
+    line-height: 22px
+    p
+      margin: 0 0 3px
+      font-size: 20px
+      font-weight: 600
+      line-height: normal
+
+
+.programs
+  h2
+    margin: 0 0 24px
+
+.programs-plane
+  width: 100%
+  border: 1px solid #EC6E00
+    radius: 10px
+  min-height: 533px
+  margin: 0 0 30px
+  &__head
+    width: 100%
+    border-bottom: 1px solid $orange
+    padding: 25px 30px 30px
+  h3
+    margin: 0
+    color: $accent
+    font-size: 36px
+  &__description
+    text-transform: uppercase
+    font-size: 20px
+    font-weight: 600
+    line-height: 27px
+    margin: 12px 0 0
+  &__body
+    width: 100%
+    padding: 21px 25px 40px 30px
+
+.programs-plane-step
+  margin: 0 0 30px
+  &:last-child
+    margin: 0
+  h4
+    text-transform: uppercase
+    color: $accent
+    margin: 0 0 5px
+    font-size: 20px
+    font-weight: 600
+    line-height: 25px
+
+.units-programs
+  margin: -90px 0 0
+  .h2-subtitle
+    margin: 0 0 20px
+    color: $accent
+  ul
+    line-height: 32px
+
+.result-course
+  margin: 50px 0 109px
+  h2
+    font-size: 63px
+    margin: 0 0 27px
+  .h2-subtitle
+    max-width: 700px
+    margin: 0 0 36px
+
+.certificates-wrapper
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 0 -9.5px
+
+.certificate-box
+  @include d-flex
+  width: 33.3%
+  padding: 0 9.5px
+
+.btn-learn
+  width: fit-content
+  margin: 10px auto 0
+  padding: 20px 40px
+
+.result-course-box
+  width: 100%
+  height: 100%
+  color: #fff
+  display: flex
+  align-items: center
+  background: linear-gradient(12.57deg, #076AB4 0%, #19357F 101.5%)
+  border-radius: 10px
+  padding: 54px 18px 60px 49px
+  &__icon
+    @include d-flex
+    margin: 0 48px 0 0
+    width: 90px
+    min-width: 90px
+
+.we-help-wrapper
+  margin: 0 0 111px
+  width: 100%
+  display: flex
+  align-items: center
+  position: relative
+  &__image
+    @include d-flex
+    position: absolute
+    bottom: -111px
+    right: 36px
+    max-width: 421px
+    width: 100%
+  &__content
+    max-width: 1150px
+    border: 1px solid #EC6E00
+      radius: 10px
+    padding: 41px 49px 59px 53px
+  h2
+    margin: 0 0 27px
+  .h2-subtitle
+    max-width: 660px
+
+.footer
+  background: radial-gradient(71.17% 157.86% at 76.02% 83.74%, #076AB4 0%, #19357F 100%)
+  padding: 34px 0 64px
+  .h2-subtitle
+    margin: 0 0 39px
+  .logo
+    max-width: 104px
+    width: 100%
+  .footer-box
+    padding: 0
+    margin: 0 45px 0 0
+    &:before
+      display: none
+  .address
+    margin: 0 45px 0 0
+  .schedule
+    display: flex
+    align-items: center
+    margin: 0
+    p
+      &:first-child
+        &:after
+          content: '|'
+          margin: 0 5px
+  .phone
+    font-weight: bold
+    font-size: 36px
+    &:hover
+      color: $orange
+  .phone-mobile
+    font-size: 24px
+    color: $orange
+  .btn
+    height: 40px
+  .links
+    color: $orange
+    margin: 0 40px 0 0
+    font-size: 24px
+    font-weight: bold
+    &:last-child
+      margin: 0
+  .mail
+    &:hover
+      color: $orange
+
+.footer-wrapper
+  margin: 0 auto 0 47px
+
+.footer-row
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  &:last-child
+    margin: 10px 0 0
+
+
+
+
+
+/*==========  new page end  ==========/*
+
+
+
 @import "media"
