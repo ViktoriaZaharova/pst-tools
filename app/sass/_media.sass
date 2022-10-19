@@ -1,7 +1,122 @@
 @import "vars"
 
 /*==========  Desktop First  ==========/*
-/* Large Devices, Wide Screens
+@media only screen and (max-width: 1360px)
+  .header-flex
+    .contacts-box
+      margin: 0 20px 0 0
+    .phone
+      margin: 0 auto 0
+
+  .footer
+    padding: 30px 0
+    .footer-box
+      margin: 0 30px 0 0
+    .phone
+      font-size: 30px
+    .phone-mobile
+      font-size: 24px
+
+  .wrapper-pst-flex
+    h2
+      font-size: 50px
+
+  .training-course-row h2
+    line-height: normal
+
+  .diagnostics-image
+    min-width: auto
+    margin: 0
+
+  .portability-row__content
+    max-width: 1025px
+
+  .compete-box
+    padding: 30px
+    &__name
+      font-size: 26px
+      margin: 0 30px 0 0
+
+  .compete-box-plus
+    padding: 0 20px 0 0
+
+@media only screen and (max-width: 1300px)
+  .footer-wrapper
+    margin: 0 auto 0 20px
+
+  .footer
+    .links
+      margin: 0 20px 0 0
+      font-size: 20px
+    .phone
+      font-size: 24px
+    .phone-mobile
+      font-size: 20px
+    .footer-box
+      margin: 0 20px 0 0
+
+  .home-pst-flex
+    h1
+      font-size: 50px
+    .box-text
+      font-size: 20px
+    .btn
+      margin: 20px 0 0
+    .subtitle
+      font-size: 26px
+    &__image
+      min-width: auto
+      width: 100%
+
+  .h2-subtitle
+    font-size: 30px
+    line-height: normal
+
+  .portability-row
+    &__content
+      max-width: none
+      width: calc(100% - 300px)
+      padding: 17px 65px 24px 219px
+    &__image
+      max-width: 500px
+
+  .compete-row
+    h4
+      font-size: 30px
+
+  .training-course-row .box-text
+    font-size: 28px
+    line-height: normal
+
+  .offer-company-box
+    padding: 20px
+    span
+      font-size: 26px
+
+  .programs-plane
+    &__head
+      padding: 20px
+    &__body
+      padding: 20px
+    h3
+      font-size: 26px
+    &__description
+      font-size: 18px
+
+  .result-course-box
+    padding: 30px
+    &__icon
+      margin: 0 30px 0 0
+
+  .certificates-wrapper
+    margin: 0 -9.5px 30px
+
+  .we-help-wrapper
+    &__content
+      width: calc(100% - 250px)
+    &__image
+      max-width: 390px
+
 @media only screen and (max-width: 1200px)
   .schedule
     margin: 0 20px 0 0
@@ -77,7 +192,114 @@
   .plane-course-box h4
     font-size: 16px
 
-/* Medium Devices, Desktops
+  .header-flex
+    .address
+      margin: 0 20px
+    .schedule
+      flex-direction: column
+      align-items: flex-start
+      p
+        &:after
+          display: none
+    .contacts-box
+      flex-direction: column
+      align-items: flex-start
+      a
+        margin: 0
+
+  .btn-my
+    padding: 11px 24px
+
+  .h2-subtitle
+    font-size: 30px
+    line-height: normal
+
+  .footer
+    .schedule
+      flex-direction: column
+      align-items: flex-start
+      p
+        &:after
+          display: none
+    .address
+      margin: 0 20px 0 0
+    .phone
+      font-size: 22px
+    .phone-mobile
+      font-size: 18px
+
+  .wrapper-pst-flex
+    h2
+      font-size: 40px
+
+  .slogan-service
+    margin: 0 0 60px
+    h4
+      font-size: 30px
+    .box-text
+      font-size: 20px
+      line-height: normal
+
+  .base-unit
+    font-size: 30px
+    &__text
+      padding: 0
+
+  .btn-md
+    font-size: 16px
+
+  .about-product-item
+    padding: 20px
+    h4
+      font-size: 18px
+
+  .about-product__image
+    margin: -205px -20px -200px 0
+
+  .portability-row
+    margin: 40px 0 0
+    .box-text
+      strong
+        font-size: 18px
+
+  .compete-row
+    margin: 0 0 50px
+    padding: 20px 0
+    &__image
+      min-width: auto
+    h4
+      font-size: 24px
+
+  .compete-box
+    margin: 0 0 30px
+    &__name
+      padding: 10px 20px
+      font-size: 22px
+    &__content
+      font-size: 16px
+
+  .training-course-row
+    &__image
+      height: 500px
+      margin: 0 0 -300px
+
+  .training-course .description-course
+    margin: 30px 0 0
+    font-size: 18px
+
+  .offer-company
+    margin: 80px 0 60px
+
+  .units-programs
+    margin: 0
+
+  .we-help-wrapper
+    &__content
+      width: calc(100% - 250px)
+    &__image
+      max-width: 370px
+      right: 0
+
 @media only screen and (max-width: 992px)
   h1
     font-size: 50px
@@ -278,6 +500,221 @@
   .callback-section-two
     margin: 0 0 40px
 
+  .header-flex
+    padding: 20px 0
+
+  .footer-wrapper
+    width: 100%
+    margin: 10px 0 0
+    order: 1
+
+  .footer
+    .logo
+      margin: 0 auto 0 0
+    .footer-box
+      width: fit-content
+
+  .home-pst-flex
+    padding: 130px 0 40px
+    &__image
+      margin: 30px auto 0
+      max-width: 500px
+
+  .capabilities
+    padding: 40px 0 60px
+
+  .slogan-service
+    margin: 0 0 40px
+    h4
+      font-size: 24px
+    .box-text
+      max-width: none
+
+  .capabilities-image
+    margin: 0 auto 30px
+    max-width: 400px
+
+  .capabilities-content
+    padding: 0
+    .h2-subtitle
+      max-width: none
+    .box-text
+      strong
+        font-size: 18px
+
+  .base-unit
+    margin: 30px 0 0
+    padding: 20px
+    flex-direction: column
+    align-items: center
+    font-size: 20px
+    text-align: center
+    &__text
+      width: 100%
+      order: -1
+    &__image
+      max-width: 300px
+      min-width: auto
+      position: relative
+      margin: 20px auto 0
+      top: 0
+
+  .diagnostics-content
+    max-width: none
+
+  .diagnostics
+    padding: 35px 0
+    .h2-subtitle
+      max-width: none
+
+  .diagnostics-image
+    max-width: 600px
+    margin: 20px auto 0
+
+  .about-product
+    padding: 60px 0
+
+  .about-product__content
+    .h2-subtitle
+      max-width: none
+
+  .about-product__image
+    margin: 20px auto 0
+    max-width: 500px
+
+  .about-product__row
+    margin: 30px 0
+    font-size: 18px
+    line-height: normal
+    ul
+      max-width: none
+
+  .about-product
+    .btn
+      width: fit-content
+      margin: 0 auto
+
+  .portability
+    .h2-subtitle
+      margin: 0 0 20px
+
+  .portability-row
+    flex-wrap: wrap
+    &__content
+      width: 100%
+      padding: 20px
+    &__image
+      position: relative
+      top: 0
+      bottom: 0
+      left: 0
+      margin: 0 auto 20px
+
+  .compete
+    margin: 80px 0 20px
+
+  .compete-row
+    h4
+      font-size: 20px
+    &__image
+      max-width: 400px
+      margin: 20px auto 0
+
+  .compete-box
+    &__head
+      margin: 0 0 20px
+    &__image
+      max-width: 500px
+      margin: 20px auto
+
+  .compete-box-advantages
+    h4
+      font-size: 18px
+
+  .compete-box-plus
+    padding: 0
+    border: none
+    margin: 0 0 20px
+
+  .training-course-row
+    padding: 30px 0
+    &__image
+      height: auto
+      margin: 20px auto 0
+      max-width: 500px
+    .h2-subtitle
+      max-width: none
+    .box-text
+      font-size: 20px
+
+  .instructor-wrapper
+    flex-wrap: wrap
+    margin: 30px 0 0
+    &__content
+      width: 100%
+      padding: 30px
+    &__image
+      position: relative
+      margin: 0 auto 20px
+      top: 0
+      left: 0
+      transform: none
+    &__name
+      font-size: 28px
+      margin: 10px 0 20px
+    h4
+      font-size: 24px
+
+  .offer-company
+    margin: 70px 0 50px
+    .h2-subtitle
+      margin: 0 0 30px
+
+  .offer-company-box span
+    font-size: 24px
+
+  .offer-company__image
+    height: auto
+    max-width: 500px
+    margin: 0 auto
+
+  .recommendation-offer
+    margin: 40px 0 0
+
+  .programs-plane
+    min-height: auto
+
+  .result-course
+    margin: 50px 0
+    .h2-subtitle
+      max-width: none
+      margin: 0 0 30px
+    h2
+      margin: 0 0 20px
+
+  .result-course-box__icon
+    width: 70px
+    min-width: 70px
+
+  .we-help-wrapper
+    flex-wrap: wrap
+    margin: 0 0 50px
+    width: 100%
+    &__content
+      max-width: none
+      padding: 30px
+      width: 100%
+    .h2-subtitle
+      max-width: none
+    &__image
+      bottom: 0
+      right: 0
+      position: relative
+      max-width: 300px
+      margin: 0 auto
+      order: -1
+
+
 /* Small Devices, Tablets
 @media only screen and (max-width: 850px)
   .footer-box
@@ -294,6 +731,13 @@
     -webkit-box-direction: normal
     -ms-flex-direction: column
     flex-direction: column
+
+  .header-flex .schedule
+    display: none
+
+  .recommendation-offer
+    h4
+      max-width: 450px
 
 @media only screen and (max-width: 768px)
   header
@@ -362,6 +806,41 @@
 
   .benefit-wrapper
     padding: 30px
+
+  .header-flex
+    .contacts-box
+      display: none
+    .address
+      display: none
+
+  .footer
+    .footer-box
+      width: 100%
+      order: 1
+      margin: 10px 0 0
+    .h2-subtitle
+      margin: 0 0 20px
+
+  .footer-wrapper
+    order: 2
+
+  .home-pst-flex
+    padding: 130px 0 40px
+
+  .h2-subtitle
+    font-size: 24px
+
+  .recommendation-offer
+    flex-direction: column
+    align-items: flex-start
+    h4
+      max-width: none
+      padding: 0
+      border: none
+      margin: 0 0 20px
+    .box-text
+      max-width: none
+
 
 /* Extra Small Devices, Phones
 @media only screen and (max-width: 576px)
@@ -450,6 +929,57 @@
   .callback-section-two h2 span strong
     font-size: 40px
 
+  .h2-subtitle
+    font-size: 24px
+
+  .home-pst-flex
+    padding: 100px 0 30px
+    .btn
+      padding: 10px 24px
+      margin: 20px auto 0
+    .subtitle
+      font-size: 22px
+      text-align: center
+    h1
+      font-size: 40px
+
+  .wrapper-pst-flex h2
+    font-size: 30px
+
+  .portability-box
+    margin: 0 0 20px
+
+  .portability-row
+    margin: 20px 0 0
+
+  .compete
+    margin: 50px 0 20px
+
+
+  .compete-box
+    padding: 20px
+    &__name
+      width: 100%
+      margin: 0 0 10px
+      text-align: center
+      font-size: 18px
+    .btn
+      margin: 0 auto
+
+  .instructor-wrapper
+    &__content
+      padding: 20px
+    &__name
+      font-size: 24px
+    h4
+      font-size: 22px
+
+  .we-help-wrapper
+    &__content
+      padding: 20px
+    &__image
+      max-width: 250px
+
 /* Custom, iPhone Retina
 @media only screen and (max-width: 480px)
   footer
@@ -476,6 +1006,22 @@
 
   .plane-course
     margin: 0 0 40px
+
+  .footer .address
+    width: fit-content
+
+  .h2-subtitle
+    font-size: 22px
+
+  .result-course-box
+    flex-direction: column
+    align-items: flex-start
+    padding: 20px
+    &__icon
+      margin: 0 auto 20px
+
+  .wrapper-pst-flex h2
+    font-size: 26px
 
 @media only screen and (max-width: 420px)
   .age-box__body
@@ -507,3 +1053,28 @@
 
   .form-course label
     width: 100%
+
+  .footer
+    .schedule
+      width: 100%
+      margin: 10px 0 0
+      padding: 0
+    .links
+      font-size: 18px
+    .address
+      margin: 0
+
+  .btn-my
+    padding: 10px 20px
+
+  .home-pst-flex
+    h1
+      font-size: 30px
+    .box-text
+      font-size: 18px
+    .subtitle
+      font-size: 20px
+
+  .certificate-box
+    width: 50%
+    margin: 0 auto 20px

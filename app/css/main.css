@@ -1621,7 +1621,8 @@ footer {
   padding: 0 15px; }
 
 .wrapper-pst-flex h2 {
-  font-size: 64px; }
+  font-size: 64px;
+  line-height: normal; }
   .wrapper-pst-flex h2 span {
     display: block; }
 
@@ -1641,7 +1642,8 @@ footer {
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    margin: 0; }
     .header-flex .schedule p:first-child:after {
       content: '|';
       margin: 0 5px; }
@@ -2073,8 +2075,8 @@ footer {
       -ms-flex-align: center;
           align-items: center; }
   .instructor-wrapper__content {
+    width: calc(100% - 170px);
     max-width: 1173px;
-    width: 100%;
     padding: 28px 65px 54px 207px;
     border: 1px solid #EC6E00;
       border-radius: 10px;
@@ -2315,6 +2317,7 @@ footer {
     max-width: 421px;
     width: 100%; }
   .we-help-wrapper__content {
+    width: calc(100% - 220px);
     max-width: 1150px;
     border: 1px solid #EC6E00;
       border-radius: 10px;
@@ -2387,7 +2390,96 @@ footer {
 
 /*==========  new page end  ==========/* */
 /*==========  Desktop First  ==========/* */
-/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1360px) {
+  .header-flex .contacts-box {
+    margin: 0 20px 0 0; }
+  .header-flex .phone {
+    margin: 0 auto 0; }
+  .footer {
+    padding: 30px 0; }
+    .footer .footer-box {
+      margin: 0 30px 0 0; }
+    .footer .phone {
+      font-size: 30px; }
+    .footer .phone-mobile {
+      font-size: 24px; }
+  .wrapper-pst-flex h2 {
+    font-size: 50px; }
+  .training-course-row h2 {
+    line-height: normal; }
+  .diagnostics-image {
+    min-width: auto;
+    margin: 0; }
+  .portability-row__content {
+    max-width: 1025px; }
+  .compete-box {
+    padding: 30px; }
+    .compete-box__name {
+      font-size: 26px;
+      margin: 0 30px 0 0; }
+  .compete-box-plus {
+    padding: 0 20px 0 0; } }
+
+@media only screen and (max-width: 1300px) {
+  .footer-wrapper {
+    margin: 0 auto 0 20px; }
+  .footer .links {
+    margin: 0 20px 0 0;
+    font-size: 20px; }
+  .footer .phone {
+    font-size: 24px; }
+  .footer .phone-mobile {
+    font-size: 20px; }
+  .footer .footer-box {
+    margin: 0 20px 0 0; }
+  .home-pst-flex h1 {
+    font-size: 50px; }
+  .home-pst-flex .box-text {
+    font-size: 20px; }
+  .home-pst-flex .btn {
+    margin: 20px 0 0; }
+  .home-pst-flex .subtitle {
+    font-size: 26px; }
+  .home-pst-flex__image {
+    min-width: auto;
+    width: 100%; }
+  .h2-subtitle {
+    font-size: 30px;
+    line-height: normal; }
+  .portability-row__content {
+    max-width: none;
+    width: calc(100% - 300px);
+    padding: 17px 65px 24px 219px; }
+  .portability-row__image {
+    max-width: 500px; }
+  .compete-row h4 {
+    font-size: 30px; }
+  .training-course-row .box-text {
+    font-size: 28px;
+    line-height: normal; }
+  .offer-company-box {
+    padding: 20px; }
+    .offer-company-box span {
+      font-size: 26px; }
+  .programs-plane__head {
+    padding: 20px; }
+  .programs-plane__body {
+    padding: 20px; }
+  .programs-plane h3 {
+    font-size: 26px; }
+  .programs-plane__description {
+    font-size: 18px; }
+  .result-course-box {
+    padding: 30px; }
+    .result-course-box__icon {
+      margin: 0 30px 0 0; }
+  .certificates-wrapper {
+    margin: 0 -9.5px 30px; }
+  .we-help-wrapper__content {
+    width: calc(100% - 250px); }
+  .we-help-wrapper__image {
+    max-width: 390px; } }
+
 @media only screen and (max-width: 1200px) {
   .schedule {
     margin: 0 20px 0 0; }
@@ -2439,9 +2531,105 @@ footer {
   .form-callback {
     width: calc(100% - 340px); }
   .plane-course-box h4 {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .header-flex .address {
+    margin: 0 20px; }
+  .header-flex .schedule {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .header-flex .schedule p:after {
+      display: none; }
+  .header-flex .contacts-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .header-flex .contacts-box a {
+      margin: 0; }
+  .btn-my {
+    padding: 11px 24px; }
+  .h2-subtitle {
+    font-size: 30px;
+    line-height: normal; }
+  .footer .schedule {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .footer .schedule p:after {
+      display: none; }
+  .footer .address {
+    margin: 0 20px 0 0; }
+  .footer .phone {
+    font-size: 22px; }
+  .footer .phone-mobile {
+    font-size: 18px; }
+  .wrapper-pst-flex h2 {
+    font-size: 40px; }
+  .slogan-service {
+    margin: 0 0 60px; }
+    .slogan-service h4 {
+      font-size: 30px; }
+    .slogan-service .box-text {
+      font-size: 20px;
+      line-height: normal; }
+  .base-unit {
+    font-size: 30px; }
+    .base-unit__text {
+      padding: 0; }
+  .btn-md {
+    font-size: 16px; }
+  .about-product-item {
+    padding: 20px; }
+    .about-product-item h4 {
+      font-size: 18px; }
+  .about-product__image {
+    margin: -205px -20px -200px 0; }
+  .portability-row {
+    margin: 40px 0 0; }
+    .portability-row .box-text strong {
+      font-size: 18px; }
+  .compete-row {
+    margin: 0 0 50px;
+    padding: 20px 0; }
+    .compete-row__image {
+      min-width: auto; }
+    .compete-row h4 {
+      font-size: 24px; }
+  .compete-box {
+    margin: 0 0 30px; }
+    .compete-box__name {
+      padding: 10px 20px;
+      font-size: 22px; }
+    .compete-box__content {
+      font-size: 16px; }
+  .training-course-row__image {
+    height: 500px;
+    margin: 0 0 -300px; }
+  .training-course .description-course {
+    margin: 30px 0 0;
+    font-size: 18px; }
+  .offer-company {
+    margin: 80px 0 60px; }
+  .units-programs {
+    margin: 0; }
+  .we-help-wrapper__content {
+    width: calc(100% - 250px); }
+  .we-help-wrapper__image {
+    max-width: 370px;
+    right: 0; } }
 
-/* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   h1 {
     font-size: 50px;
@@ -2587,7 +2775,198 @@ footer {
   .callback-section-two .form button {
     max-width: 31.5%; }
   .callback-section-two {
-    margin: 0 0 40px; } }
+    margin: 0 0 40px; }
+  .header-flex {
+    padding: 20px 0; }
+  .footer-wrapper {
+    width: 100%;
+    margin: 10px 0 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
+  .footer .logo {
+    margin: 0 auto 0 0; }
+  .footer .footer-box {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
+  .home-pst-flex {
+    padding: 130px 0 40px; }
+    .home-pst-flex__image {
+      margin: 30px auto 0;
+      max-width: 500px; }
+  .capabilities {
+    padding: 40px 0 60px; }
+  .slogan-service {
+    margin: 0 0 40px; }
+    .slogan-service h4 {
+      font-size: 24px; }
+    .slogan-service .box-text {
+      max-width: none; }
+  .capabilities-image {
+    margin: 0 auto 30px;
+    max-width: 400px; }
+  .capabilities-content {
+    padding: 0; }
+    .capabilities-content .h2-subtitle {
+      max-width: none; }
+    .capabilities-content .box-text strong {
+      font-size: 18px; }
+  .base-unit {
+    margin: 30px 0 0;
+    padding: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 20px;
+    text-align: center; }
+    .base-unit__text {
+      width: 100%;
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1; }
+    .base-unit__image {
+      max-width: 300px;
+      min-width: auto;
+      position: relative;
+      margin: 20px auto 0;
+      top: 0; }
+  .diagnostics-content {
+    max-width: none; }
+  .diagnostics {
+    padding: 35px 0; }
+    .diagnostics .h2-subtitle {
+      max-width: none; }
+  .diagnostics-image {
+    max-width: 600px;
+    margin: 20px auto 0; }
+  .about-product {
+    padding: 60px 0; }
+  .about-product__content .h2-subtitle {
+    max-width: none; }
+  .about-product__image {
+    margin: 20px auto 0;
+    max-width: 500px; }
+  .about-product__row {
+    margin: 30px 0;
+    font-size: 18px;
+    line-height: normal; }
+    .about-product__row ul {
+      max-width: none; }
+  .about-product .btn {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto; }
+  .portability .h2-subtitle {
+    margin: 0 0 20px; }
+  .portability-row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .portability-row__content {
+      width: 100%;
+      padding: 20px; }
+    .portability-row__image {
+      position: relative;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin: 0 auto 20px; }
+  .compete {
+    margin: 80px 0 20px; }
+  .compete-row h4 {
+    font-size: 20px; }
+  .compete-row__image {
+    max-width: 400px;
+    margin: 20px auto 0; }
+  .compete-box__head {
+    margin: 0 0 20px; }
+  .compete-box__image {
+    max-width: 500px;
+    margin: 20px auto; }
+  .compete-box-advantages h4 {
+    font-size: 18px; }
+  .compete-box-plus {
+    padding: 0;
+    border: none;
+    margin: 0 0 20px; }
+  .training-course-row {
+    padding: 30px 0; }
+    .training-course-row__image {
+      height: auto;
+      margin: 20px auto 0;
+      max-width: 500px; }
+    .training-course-row .h2-subtitle {
+      max-width: none; }
+    .training-course-row .box-text {
+      font-size: 20px; }
+  .instructor-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 30px 0 0; }
+    .instructor-wrapper__content {
+      width: 100%;
+      padding: 30px; }
+    .instructor-wrapper__image {
+      position: relative;
+      margin: 0 auto 20px;
+      top: 0;
+      left: 0;
+      -webkit-transform: none;
+              transform: none; }
+    .instructor-wrapper__name {
+      font-size: 28px;
+      margin: 10px 0 20px; }
+    .instructor-wrapper h4 {
+      font-size: 24px; }
+  .offer-company {
+    margin: 70px 0 50px; }
+    .offer-company .h2-subtitle {
+      margin: 0 0 30px; }
+  .offer-company-box span {
+    font-size: 24px; }
+  .offer-company__image {
+    height: auto;
+    max-width: 500px;
+    margin: 0 auto; }
+  .recommendation-offer {
+    margin: 40px 0 0; }
+  .programs-plane {
+    min-height: auto; }
+  .result-course {
+    margin: 50px 0; }
+    .result-course .h2-subtitle {
+      max-width: none;
+      margin: 0 0 30px; }
+    .result-course h2 {
+      margin: 0 0 20px; }
+  .result-course-box__icon {
+    width: 70px;
+    min-width: 70px; }
+  .we-help-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 0 50px;
+    width: 100%; }
+    .we-help-wrapper__content {
+      max-width: none;
+      padding: 30px;
+      width: 100%; }
+    .we-help-wrapper .h2-subtitle {
+      max-width: none; }
+    .we-help-wrapper__image {
+      bottom: 0;
+      right: 0;
+      position: relative;
+      max-width: 300px;
+      margin: 0 auto;
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 850px) {
@@ -2604,7 +2983,11 @@ footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .header-flex .schedule {
+    display: none; }
+  .recommendation-offer h4 {
+    max-width: 450px; } }
 
 @media only screen and (max-width: 768px) {
   header .schedule, header .contacts-box {
@@ -2652,7 +3035,42 @@ footer {
   .benefit-wrapper__scheme {
     margin: 30px auto 0; }
   .benefit-wrapper {
-    padding: 30px; } }
+    padding: 30px; }
+  .header-flex .contacts-box {
+    display: none; }
+  .header-flex .address {
+    display: none; }
+  .footer .footer-box {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 10px 0 0; }
+  .footer .h2-subtitle {
+    margin: 0 0 20px; }
+  .footer-wrapper {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+  .home-pst-flex {
+    padding: 130px 0 40px; }
+  .h2-subtitle {
+    font-size: 24px; }
+  .recommendation-offer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .recommendation-offer h4 {
+      max-width: none;
+      padding: 0;
+      border: none;
+      margin: 0 0 20px; }
+    .recommendation-offer .box-text {
+      max-width: none; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -2714,7 +3132,46 @@ footer {
     margin: 0 auto 15px;
     max-width: 100%; }
   .callback-section-two h2 span strong {
-    font-size: 40px; } }
+    font-size: 40px; }
+  .h2-subtitle {
+    font-size: 24px; }
+  .home-pst-flex {
+    padding: 100px 0 30px; }
+    .home-pst-flex .btn {
+      padding: 10px 24px;
+      margin: 20px auto 0; }
+    .home-pst-flex .subtitle {
+      font-size: 22px;
+      text-align: center; }
+    .home-pst-flex h1 {
+      font-size: 40px; }
+  .wrapper-pst-flex h2 {
+    font-size: 30px; }
+  .portability-box {
+    margin: 0 0 20px; }
+  .portability-row {
+    margin: 20px 0 0; }
+  .compete {
+    margin: 50px 0 20px; }
+  .compete-box {
+    padding: 20px; }
+    .compete-box__name {
+      width: 100%;
+      margin: 0 0 10px;
+      text-align: center;
+      font-size: 18px; }
+    .compete-box .btn {
+      margin: 0 auto; }
+  .instructor-wrapper__content {
+    padding: 20px; }
+  .instructor-wrapper__name {
+    font-size: 24px; }
+  .instructor-wrapper h4 {
+    font-size: 22px; }
+  .we-help-wrapper__content {
+    padding: 20px; }
+  .we-help-wrapper__image {
+    max-width: 250px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 480px) {
@@ -2736,7 +3193,26 @@ footer {
     -ms-flex-pack: center;
     justify-content: center; }
   .plane-course {
-    margin: 0 0 40px; } }
+    margin: 0 0 40px; }
+  .footer .address {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
+  .h2-subtitle {
+    font-size: 22px; }
+  .result-course-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 20px; }
+    .result-course-box__icon {
+      margin: 0 auto 20px; }
+  .wrapper-pst-flex h2 {
+    font-size: 26px; } }
 
 @media only screen and (max-width: 420px) {
   .age-box__body {
@@ -2769,4 +3245,23 @@ footer {
     .plane-course-box__content {
       width: 100%; }
   .form-course label {
-    width: 100%; } }
+    width: 100%; }
+  .footer .schedule {
+    width: 100%;
+    margin: 10px 0 0;
+    padding: 0; }
+  .footer .links {
+    font-size: 18px; }
+  .footer .address {
+    margin: 0; }
+  .btn-my {
+    padding: 10px 20px; }
+  .home-pst-flex h1 {
+    font-size: 30px; }
+  .home-pst-flex .box-text {
+    font-size: 18px; }
+  .home-pst-flex .subtitle {
+    font-size: 20px; }
+  .certificate-box {
+    width: 50%;
+    margin: 0 auto 20px; } }
