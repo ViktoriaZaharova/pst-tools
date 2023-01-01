@@ -10,8 +10,6 @@ $('.btn-close').on('click', function () {
 });
 
 
-
-
 $(document).ready(function () {
     if ($('#wpadminbar')[0]) { // fix admin bar
         $('header').css('margin-top', '32px')
@@ -36,10 +34,9 @@ function showModal(title, text) { // показ успеха
     $('#custom_modal .modal-title').html(title); // установим заголовок окна
     $('#custom_modal .modal-body').html(text); // установим text окна
 
-    $('.modal').modal('hide')
+    $('.modal').modal('hide');
     $('#custom_modal').modal('toggle');
 }
-
 
 
 $('.form, .form-course').submit(function (e) { // Отправка формы
@@ -48,7 +45,18 @@ $('.form, .form-course').submit(function (e) { // Отправка формы
     var form = $(this); // сама форма
     var but = form.find('button[type="submit"]'); // кнопка отправки
     but.prop('disabled', true); // отключим кнопку
-    sendAjax(form_data, function (data) { if (data.status) { showModal('Заявка успешно отправлена', 'Спасибо, в ближайшее время свяжемся с Вами'); form[0].reset(); } else { alert(data.text); } }, function () { alert('Ошибка, попробуйте еще раз'); }, function () { but.prop('disabled', false); });
+    sendAjax(form_data, function (data) {
+        if (data.status) {
+            showModal('Заявка успешно отправлена', 'Спасибо, в ближайшее время свяжемся с Вами');
+            form[0].reset();
+        } else {
+            alert(data.text);
+        }
+    }, function () {
+        alert('Ошибка, попробуйте еще раз');
+    }, function () {
+        but.prop('disabled', false);
+    });
 });
 
 $(document).on('click', 'a[data-target="#callModal"]', function () {
